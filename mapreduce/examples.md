@@ -20,7 +20,7 @@ and a test input file `example.txt` with some text.
 `hadoop fs -mkdir /wordcount`
 `hadoop fs -put example.txt /wordcount`
 * run the wordcount example as follows, second and third arguments are the input and output respectively
-` hadoop jar wordcount.jar /wordcount/wordcount.txt  wordcount_output`
+` hadoop jar wordcount.jar  wordcount /wordcount/wordcount.txt  wordcount_output`
 * to view the output inspect the directories for the output
 ` hadoop fs -ls /user`
 * the output should be in the  directory `/user/opt/wordcount_output`
