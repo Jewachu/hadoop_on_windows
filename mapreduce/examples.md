@@ -8,9 +8,9 @@ and copy them in your working directory.
 * copy the wordcount.java in the same directory
 and a test input file `example.txt` with some text.
 * start hadoop
-`start-all'
+`start-all`
 *change the working directory to the one you created earlier
-`cd\
+`cd\`
 `cd\hadoop-mapreduce-examples`
 * compile the wordcount.java, remember to include classpath
 `javac wordcount.java -cp hadoop-common-2.*.*.jar;hadoop-mapreduce-client-core-2.*.*.jar`
