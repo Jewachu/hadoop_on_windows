@@ -1,4 +1,4 @@
-Try out the following example to familiarize yourself with the mapreduce framework of hadoop.
+Try out the following example to familiarize yourself with the mapreduce framework of hadoop
 *create a working directory for this examples
 `C:\hadoop_mapreduce_exmples`
 * To run java programs in hadoop we need first to compile them and create executable jar files. find the following jar files in the hadoop installation directory
