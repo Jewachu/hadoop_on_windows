@@ -23,15 +23,17 @@ Edit the user variable PATH to include the following `C:\hadoop\bin` and `C:\jav
 navigate to `C:\hadoop\etc\hadoop` and edit the following xml files.
 
 core-site.xml as follows
-`<configuration>
+```<configuration>
      <property>
          <name>fs.defaultFS</name>
          <value>hdfs://localhost:9000</value>
      </property>
-</configuration>`
+</configuration>
+```
+
 
 hdfs-site.xml as follows
-`<configuration>
+```<configuration>
      <property>
          <name>dfs.replication</name>
          <value>1</value>
@@ -48,18 +50,20 @@ hdfs-site.xml as follows
         <name>dfs.permissions.enabled</name> 
         <value>false</value>
     </property> 
- </configuration>`
+ </configuration>
+ ```
 
 Create copy of the mapred-site.template and rename it as mapred.xml now add the following configurations
-`<configuration>
+```<configuration>
      <property>
          <name>mapred.framework.name</name>
          <value>yarn</value>
      </property>
- </configuration>`
+ </configuration>
+```
 
 edit the yarn-site.xml as follows
-`<configuration>
+```<configuration>
      <property>
          <name>yarn.nodemanager.aux-services</name>
          <value>mapreduce_shuffle</value>
@@ -68,7 +72,8 @@ edit the yarn-site.xml as follows
          <name>yarn.nodemanager.aux-services.mapreduce.shuffle.class</name>
          <value>org.apache.hadoop.mapred.ShuffleHandler</value>
      </property>
- </configuration>`
+ </configuration>
+ ```
 
 Finally edit the `hadoop-env.cmd` the variable JAVA_HOME should point to the path of your jdk installation
 ` set JAVA_HOME="C:\java\jdk1.8.0_221"` use double quotes for longer paths
